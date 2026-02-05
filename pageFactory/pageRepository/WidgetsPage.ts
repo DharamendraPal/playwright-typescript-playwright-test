@@ -15,7 +15,7 @@ export class WidgetsPage {
         this.context = context;
         this.AUTOCOMPLETE_EDITBOX = page.locator('#autoCompleteSingleInput');
         this.BLUE_COLOUR_TEXT = page.getByText('Blue', { exact: true }); //Used to select Blue colour from Autocomplete editbox
-        this.HOVER_BUTTON = page.locator('#toolTipButton');
+        this.HOVER_BUTTON = page.getByRole('button', { name: 'Hover me to see' });
         this.TOOL_TIP_TEXT = page.getByRole("tooltip");
         this.OLD_SELECT_MENU = page.locator('#oldSelectMenu');
         this.MULTISELECT_MENU = page.getByText('Select...');

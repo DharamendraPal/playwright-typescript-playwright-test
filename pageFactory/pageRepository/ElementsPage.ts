@@ -32,7 +32,7 @@ export class ElementsPage {
         this.SUBMIT_BUTTON = page.getByText(`Submit`);
         this.SUBMITTED_TEXT = page.getByText(`Name:AutoTest`, { exact: true }); // Matches exact text
         this.HOME_CHECK_BOX = page.getByText('Home');
-        this.HOME_SELECTED_TEXT = page.locator(`.display-result`);
+        this.HOME_SELECTED_TEXT = page.locator(`#result`);
         this.NO_RADIO_BUTTON = page.locator(`#noRadio`); // Using CSS Selector
         this.WEB_TABLES_HEADER = page.getByRole('columnheader');
         this.WEB_TABLES_EDIT_ICON = page.getByRole('row', { name: 'Cierra' }).getByTitle('Edit').locator('svg'); // Chaining Locators

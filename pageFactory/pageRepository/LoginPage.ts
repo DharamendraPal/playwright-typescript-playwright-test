@@ -16,9 +16,9 @@ export class LoginPage {
         this.page = page;
         this.context = context;
         webActions = new WebActions(this.page, this.context);
-        this.USERNAME_EDITBOX = page.locator('#userName');
-        this.PASSWORD_EDITBOX = page.locator('#password');
-        this.LOGIN_BUTTON = page.locator('#login');
+        this.USERNAME_EDITBOX = page.getByPlaceholder('UserName');
+        this.PASSWORD_EDITBOX = page.getByPlaceholder('Password');
+        this.LOGIN_BUTTON = page.getByRole('button', { name: 'Login' });
         this.BOOKS_SEARCH_BOX = page.getByPlaceholder('Type to search');
     }
 
