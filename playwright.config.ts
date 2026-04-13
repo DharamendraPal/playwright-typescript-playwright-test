@@ -15,7 +15,7 @@ const reportConfig: OrtoniReportConfig = {
   title: "Playwright Framework with Typescript",
   showProject: true,
   filename: "OrtoniHtmlReport",
-  authorName: "Akshay Pai",
+  authorName: "Dharmendra",
   folderPath: "html-report",
   projectName: "Playwright Framework with Typescript",
 }
@@ -30,6 +30,9 @@ const config: PlaywrightTestConfig = {
 
   //number of retries if test case fails
   retries: 0,
+
+  //Number of worker processes for parallel execution
+  workers: 20,
 
   //Reporters
   reporter: isCI 
